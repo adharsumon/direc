@@ -1,0 +1,1287 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+:root {
+    --rcolor: #ff414d;
+    --bcolor: rgba(0, 0, 0, 0.8);
+    --bdcolor: #000000;
+    --pcolor: #999999;
+    --gbolor: #f0f4f7;
+    --wbolor: #fff;
+    --lwolor: rgba(255, 255, 255, 0.7);
+}
+
+/*ALL SECTION TITLE HERE*/
+.section-title {
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 14px;
+    color: var(--rcolor) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    color: var(--bcolor);
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+/* theme_btnn CSS HERE */
+.btn-primary {
+    color: var(--wbolor);
+    background-color: var(--rcolor);
+    border-color: var(--rcolor);
+    padding: 10px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: var(--rcolor);
+}
+
+/******************* END OF COMMON CSS *******************/
+
+/* PRELOADER CSS */
+
+
+/*=============================
+    01. HEADER PART CSS
+==============================*/
+.main_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main_logo {
+    width: 300px;
+}
+
+.main_logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.logo_img .fa {
+    font-size: 50px;
+    display: block;
+    color: var(--rcolor);
+}
+
+.main_logo .fa {}
+
+.main_logo .logo_text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.main_logo .logo_text span {}
+
+.main_logo .logo_text span.one {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.main_logo .logo_text span.two {
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+ul.navbar-nav {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul.navbar-nav li {}
+
+ul.navbar-nav li a {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--lwolor);
+    margin: 0 15px;
+    letter-spacing: 2px;
+    padding: 25px;
+    text-transform: uppercase;
+    transition: all .3s linear;
+}
+
+ul.navbar-nav li a.active {
+    color: #fff;
+}
+
+ul.navbar-nav li:hover a {
+    color: #fff;
+}
+
+ul.navbar-nav .header_btn {}
+
+ul.navbar-nav .header_btn span.btn-primary {}
+
+/*=============================
+    02. BANNER PART CSS
+==============================*/
+.banner_part {
+    height: 120vh;
+    background-attachment: fixed !important;
+}
+
+.banner-overlay {
+    background: #0000003d;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner_area {
+    text-align: center;
+}
+
+.banner-headling {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-headling h2 {
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.banner-headling span {
+    color: var(--lwolor);
+    font-weight: 600;
+}
+
+/* BANNER SEARCH */
+.bannn-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.single-search {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.b-s-input-feild {
+    padding: 0 5px 0 30px;
+    /* padding: 15px 5px 15px 30px; */
+    /* padding-right: 0; */
+    border: 1px solid #fff;
+    outline: none;
+    width: 200px;
+    color: red;
+}
+
+.fa.b-s-fa {
+    font-size: 14px;
+    color: var(--pcolor);
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.b-s-input-feild {
+    padding: 15px 5px 15px 30px;
+    border: 1px solid #fff;
+    outline: none;
+    width: 200px;
+    color: var(--pcolor);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.b-s-input-feild.ss.w-100 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid var(--pcolor);
+}
+
+.b-s-input-feild.sss.w-100 {
+    border-right: 1px solid var(--pcolor);
+}
+
+.b-s-input-feild.select {
+    appearance: none;
+    padding: 0 5px 0 30px;
+    /* padding: 17px 5px 18px 30px; */
+}
+
+.single-search.btn-primary {
+    width: 15%;
+    /* padding: 20px 6px; */
+    /* padding: 18px 5px 17px 30px; */
+    padding: 0 5px 0 30px;
+    transform: translateX(-10px);
+    border-radius: 5px;
+}
+
+.single-search.btn-primary a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.as {
+    height: 53px;
+}
+
+/*=============================
+    03. CATEGORIES PART CSS
+==============================*/
+.categories-part {
+    background: #F0F4F7;
+    position: relative;
+}
+
+.row.top {
+    transform: translateY(-90px);
+}
+
+.single-categories {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    z-index: 111;
+    box-shadow: 0px 5px 14px -6px rgba(0, 0, 0, 0.27) !important;
+}
+
+.single-categories .cate-wrap {
+
+    text-align: center;
+    /* padding: 40px 26px; */
+    transition: all .3s linear;
+}
+
+.single-categories .cate-wrap a {
+    padding: 38px 17px 70px 17px;
+}
+
+.single-categories .cate-wrap .cate-img {}
+
+.single-categories .cate-wrap .cate-img .fa {
+    font-size: 60px;
+    color: var(--rcolor);
+}
+
+.single-categories .cate-title {}
+
+.single-categories .cate-title h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    /* width: 100px;
+    margin: 0 auto; */
+    color: var(--bcolor) !important;
+    margin-bottom: 13px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.single-categories .cate-text {}
+
+.single-categories .cate-text span.onee {
+    color: var(--rcolor);
+    background: rgba(0, 0, 0, 0.04);
+    padding: 2px 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.single-categories .cate-text span.twoo {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.single-categories.bottom {
+    margin-top: 30px;
+}
+
+.single-categories::before {
+    content: '';
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: -130%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.single-categories:hover {
+    background: var(--rcolor) !important;
+}
+
+.single-categories:hover .cate-wrap a .fa {
+    color: #fff !important;
+}
+
+.single-categories:hover .cate-wrap a h4 {
+    color: #fff !important;
+}
+
+.single-categories:hover .cate-wrap a span {
+    color: #fff !important;
+}
+
+.single-categories:hover .cate-wrap a span.onee {
+    color: var(--rcolor) !important;
+    background: #fff !important;
+}
+
+.single-categories:hover::before {
+    top: 50%;
+    right: -85%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.single-categories.active {
+    background: var(--rcolor) !important;
+    box-shadow: 0px 5px 14px -6px rgba(0, 0, 0, 0.27) !important;
+}
+
+.single-categories.active .cate-wrap a .fa {
+    color: #fff !important;
+}
+
+.single-categories.active .cate-wrap a h4 {
+    color: #fff !important;
+}
+
+.single-categories.active .cate-wrap a span {
+    color: #fff !important;
+}
+
+.single-categories.active .cate-wrap a span.onee {
+    color: var(--rcolor) !important;
+    background: #fff !important;
+}
+
+.single-categories.active::before {
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+    right: -85%;
+}
+
+/*=============================
+    04. OUR-LISTING PART CSS
+==============================*/
+.out-listing-part {
+    background: #f0f4f7;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.single-listing {
+    position: relative;
+    transition: all .3s linear;
+}
+
+.single-list-img-wrap {
+    position: relative;
+}
+
+.single-listing a {
+    height: 100%;
+}
+
+.listing-image {
+    position: relative;
+    height: 250px;
+}
+
+.listing-image img {
+    height: 100%;
+}
+
+.listing-image-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.single-listing:hover {
+    box-shadow: 0px 5px 39px -14px rgba(0, 0, 0, 0.26) !important;
+}
+
+.single-listing:hover .listing-image-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.listing-image-overlay .fa {
+    font-size: 20px;
+    color: var(--rcolor);
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.listing-image-logo {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: var(--rcolor);
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing-image-logo .fa {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.single-list-info-wrap {
+    text-align: center;
+    background: #fff;
+    padding-top: 50px !important;
+    padding: 0 15px;
+    height: 300px;
+}
+
+.list-title p {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--rcolor);
+    letter-spacing: 1px;
+}
+
+.list-title h4 {
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    padding: 12px 0;
+}
+
+.list-infoo .fa {
+    font-size: 14px;
+    color: var(--rcolor);
+    display: inline-block;
+}
+
+.list-infoo span {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--pcolor);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.list-infoo.twooo {
+    border-bottom: 0.5px solid #eee;
+    margin-top: 10px !important;
+    padding-bottom: 25px;
+}
+
+/* LIST REVIEW */
+.list-review {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.list-review-wap-left {
+    margin-right: 60px;
+}
+
+.list-review-wap-left p {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--pcolor);
+    font-weight: 500;
+}
+
+.list-review-wap-left p .fivee {
+    color: #000 !important;
+    font-size: 15px !important;
+}
+
+.list-review-wap-left .fa {
+    font-size: 14px !important;
+    color: #ffc107;
+    margin-left: 5px;
+}
+
+.list-review-wap-left .fa span.num {
+    color: #000 !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.list-review-right .fa {
+    color: var(--rcolor);
+    background: #DDDCDC;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* listing-offer */
+.listing-offer {
+    display: flex;
+    align-items: center;
+    background: var(--rcolor);
+    background-image: linear-gradient(129deg, #ff414d 25%, #f03943 25%, #f03943 50%, #ff414d 50%, #ff414d 75%, #f03943 75%, #f03943 100%);
+    background-size: 25.74px 31.78px;
+    position: relative;
+}
+
+.listing-offer::before {
+    content: '';
+    background: var(--rcolor);
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.l-offer-left {
+    width: 35%;
+}
+
+.l-offer-right {
+    width: 65%;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+}
+
+.l-offer-right-text {
+    width: 525px;
+    padding-left: 50px;
+}
+
+.l-offer-right-text p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.l-offer-right-text h4 {
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+.l-offer-right-button a {
+    color: #fff;
+    background: #151C26;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/*=============================
+    05.DIRECTION PART PART CSS
+==============================*/
+
+.direction-left-image img {
+    height: 700px;
+}
+
+/* direction-part-right */
+.direction-part-right {
+    margin-left: 30px;
+}
+
+.direction-part-right .section-title {
+    text-align: left;
+}
+
+.direction-right-text-wrap p.oo {
+    margin-top: 20px;
+    text-align: justify;
+    color: #999 !important;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.direction-right-text-wrap p.tt {
+    text-align: justify;
+    color: #999 !important;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Direction counter part */
+
+.direction-counter-up {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.direction-counter-up .single-counter {
+    width: 25%;
+    background: #F7F7F7;
+    padding: 30px 0;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.direction-counter-up .single-counter h4 {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.direction-counter-up .single-counter .ww span {
+    font-weight: 600;
+    font-size: 40px;
+    color: #000;
+}
+
+.direction-counter-up .single-counter p {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--rcolor);
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+/*=============================
+    06. TESTIMONIAL PART PART CSS
+==============================*/
+.testimonial-part {
+    background: #F0F4F7;
+}
+
+.single-testimonial {
+    background: #fff;
+    padding: 0 20px 30px 30px;
+    margin-top: 60px;
+}
+
+.testi-icon .fa {
+    color: #fff;
+    background: var(--rcolor);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    transform: translateY(-20px);
+}
+
+.testi-text p {
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.8;
+    padding-right: 25px;
+    text-align: inherit;
+    margin-bottom: 20px;
+}
+
+.testi-image {
+    display: flex;
+    align-items: center;
+}
+
+.people-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.people-text h4 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.people-text p {
+    font-size: 13px;
+    color: var(--rcolor);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* SLIDER CAROUSEL */
+.lSSlideOuter .lSPager.lSpg {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px !important;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+    text-indent: -999em;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+.lSSlideOuter .lSPager.lSpg>li:hover a,
+.lSSlideOuter .lSPager.lSpg>li.active a {
+    background-color: #999;
+}
+
+/*=============================
+    07.HOW IT WORK PART CSS
+==============================*/
+.how-it-work-part {
+    position: relative;
+}
+
+.how-it-work-part .section-title h2 {
+    color: #fff;
+}
+
+/* How work video part */
+.how-work-video {
+    margin-top: 100px;
+    position: relative;
+}
+
+.h-w-overlay {
+    padding-top: 100px;
+}
+
+.da.bg_cover {
+    width: 100%;
+    height: 600px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.h-w-v-image {
+    height: 570px;
+}
+
+.h-w-v-image img {
+    height: 100%;
+}
+
+.h-w-v-image a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.h-w-v-image .fa {
+    color: var(--rcolor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.h-w-v-image a::before {
+    content: '';
+    position: absolute;
+    background: var(--rcolor);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ani 2s infinite;
+}
+
+@keyframes ani {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 130px;
+        height: 130px;
+        opacity: 0;
+    }
+}
+
+/* SINGLE WORK */
+
+.single-work .work-wrap {
+    text-align: center;
+    background: #F0F4F7;
+    height: 550px;
+    padding: 30px 50px;
+    transition: all .3s linear;
+    position: relative;
+    overflow: hidden;
+}
+
+.single-work .work-wrap .fa {
+    color: #fff;
+    background: var(--rcolor);
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    transition: all .3s linear;
+}
+
+.single-work .work-wrap h4.w-title {
+    font-size: 24px;
+    color: rgba(0, 0, 0, .8);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: all .3s linear;
+}
+
+.single-work .work-wrap p.w-text {
+    color: #999;
+    line-height: 1.8;
+    text-align: unset;
+    transition: all .3s linear;
+}
+
+.work-wrap:hover {
+    background: var(--rcolor);
+}
+
+.work-wrap:hover.work-wrap .fa {
+    background: #fff;
+    color: var(--rcolor);
+}
+
+.work-wrap:hover.work-wrap h4.w-title {
+    color: #fff !important;
+}
+
+.work-wrap:hover.work-wrap p.w-text {
+    color: #fff !important;
+}
+
+.single-work .work-wrap::before {
+    content: '';
+    display: inline-block;
+    background: rgba(0, 0, 0, .1) !important;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.single-work .work-wrap:hover::before {
+    opacity: 1;
+    visibility: visible;
+    top: 77%;
+    left: 50%;
+}
+
+/*=============================
+    08. BLOG PART CSS
+==============================*/
+.blog-part {
+    background: #F0F4F7;
+}
+
+.single-blog {
+    position: relative;
+}
+
+.blog-top {
+    position: relative;
+}
+
+.blog-top a {
+    width: 100%;
+}
+
+.single-blog .blog-image img {
+    height: 270px;
+}
+
+.single-blog .b-image-two {
+    display: flex;
+    width: 90%;
+    background: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    align-items: center !important;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.single-blog .b-image-two .left {
+    padding-left: 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.single-blog .b-image-two .left img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.single-blog .b-image-two .left span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .7);
+    line-height: 1.4;
+}
+
+.single-blog .b-image-two .right {
+    margin-left: auto;
+}
+
+.single-blog .b-image-two .right .fa {
+    font-size: 14px;
+    color: var(--rcolor);
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.blog-info {
+    background: #fff;
+    padding: 20px 20px 40px 20px;
+}
+
+.blog-info span {
+    color: #999;
+    font-weight: 600;
+}
+
+.blog-info span a.comment {
+    color: var(--rcolor);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.blog-info a.s-blog-headline {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    padding: 20px 30px 15px 0;
+    line-height: 1.5;
+    text-align: left;
+    transition: all .3s linear;
+}
+
+.blog-info a.s-blog-headline.active {
+    color: var(--rcolor) !important;
+}
+
+.blog-info p {
+    color: #999;
+    line-height: 1.8;
+    text-align: left;
+    padding-right: 26px;
+}
+
+.blog-info a.s-blog-headline:hover {
+    color: var(--rcolor);
+}
+
+/*=============================
+    09. FOOTER PART CSS
+==============================*/
+
+.footer-top {
+    background: #10151C;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-left-info p {
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.8;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.footer-left-info ul li a .fa {
+    font-size: 16px;
+    margin-right: 15px;
+    background: var(--rcolor);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* footer-menu */
+
+.footer-menu h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.footer-menu-items ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 15px;
+    transition: all .3s linear;
+}
+
+.footer-menu-items ul li a .fa {
+    margin-right: 5px;
+}
+
+.footer-menu-items ul li a span {}
+
+.footer-menu-items ul li>a:hover {
+    color: var(--rcolor) !important;
+}
+
+.footer-menu-items ul.footer-right li .ww {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.footer-menu-items ul.footer-right li .ww .fa {
+    display: block;
+    margin-right: 20px;
+    color: var(--rcolor);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer-menu-items ul.footer-right li .ww span {
+    color: rgba(255, 255, 255, .7);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* footer-bottom */
+.footer-bottom {
+    padding: 50px 0;
+    background: #0C1016 !important;
+}
+
+.footer-bottom span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .5);
+    font-weight: 500;
+}
+
+.footer-bottom span a {
+    color: var(--rcolor);
+}
+
+/*=============================
+    10. PART CSS
+==============================*/
+
+/*=============================
+    11. PART CSS
+==============================*/
+
+/*=============================
+    12. PART CSS
+==============================*/
+
+/*=============================
+    13. PART CSS
+==============================*/
+
+/*=============================
+    14. PART CSS
+==============================*/
+
+/*=============================
+    15. PART CSS
+==============================*/
+
+/*=============================
+    16. PART CSS
+==============================*/
+
+/*=============================
+    17. PART CSS
+==============================*/
+
+/*=============================
+    18. PART CSS
+==============================*/
+
+/*=============================
+    19. PART CSS
+==============================*/
